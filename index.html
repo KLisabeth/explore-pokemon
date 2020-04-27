@@ -4,14 +4,22 @@
 <head>
   <meta charset='utf-8'>
   <title>explore pokemon</title>
-  <script>
-    window.onload = () => import('./app/index.js');
-  </script>
+  <script type="module" src="./app/index.js"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
 
 </head>
 
 <body>
-  <div id='root'></div>
+  <h1 class=" text-warning display-4 text-center">Find Pokemon</h1>
+  <form class="container mt-4" style="max-width: 35rem;">
+    <input class="form-control" type="number" id="pokemonId"/>
+    <button class="btn btn-primary btn-block" id="catch">Catch</button>
+    <button class="btn btn-danger btn-block" id="delete">Delete</button>
+    <hr>
+    <div  class="card border-light mb-3 text-center" style="max-width: 35rem;" id='root'></div>
+    
+  </form>
+ 
 </body>
 
 </html>
